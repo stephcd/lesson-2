@@ -41,11 +41,9 @@ object load
     constant_power_A_real (load_114.constant_power_A_real*2); // double load_114 
     constant_power_A_reac (load_114.constant_power_A_reac*2); // double load_114
     nominal_voltage 2401.7771;
+    constant_current_A_real (load_116.constant_power_A_real/nominal_voltage)
+    constant_current_A_reac (load_116.constant_power_A_reac/nominal_voltage)
 }
-
-//Task 2.3 - Change the constant power load on `load_116` to an equivalent constant current load.
-modify load_116.constant_power_A_real (load_116.constant_power_A_real/nominal_voltage`)
-modify load_116.constant_power_A_reac (load_116.constant_power_A_reac/nominal_voltage`)
     
 
 #output "IEEE-123-voltage-profile.png" -t profile -l 10
