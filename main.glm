@@ -41,8 +41,8 @@ object load
     constant_power_A_real (load_114.constant_power_A_real*2); // double load_114 
     constant_power_A_reac (load_114.constant_power_A_reac*2); // double load_114
     nominal_voltage 2401.7771;
-    constant_current_A_real (load_116.constant_power_A_real/nominal_voltage);
-    constant_current_A_reac (load_116.constant_power_A_reac/nominal_voltage);
+    constant_current_A_real (load_116.constant_power_A_real/load_116.nominal_voltage);
+    constant_current_A_reac (load_116.constant_power_A_reac/load_116.nominal_voltage);
 }
     
 
